@@ -18,12 +18,7 @@ public class PlayerInputName : MonoBehaviour
     {
         if(playerName.Length > 1 && playerName.Length < 11 && Input.GetKeyDown(KeyCode.Return))
         {
-            InputName();
+            playerName = playerNameInput.text;
         }
-    }
-    
-    public void InputName()
-    {
-        playerName = playerNameInput.text;
-    }
+    }   
 }
